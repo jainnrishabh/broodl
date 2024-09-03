@@ -14,7 +14,11 @@ export const metadata = {
   description: "Track your daily mood every day of the year!",
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   const header = (
     <header className="p-4 sm:p-8 flex items-center justify-between gap-4">
       <Link href={'/'}>
